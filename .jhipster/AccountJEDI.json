@@ -1,0 +1,32 @@
+{
+    "name": "AccountJEDI",
+    "fields": [
+        {
+            "fieldName": "accountNum",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "accountLabel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "oldBalance",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "balance",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180703102107",
+    "entityTableName": "account_jedi",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}
