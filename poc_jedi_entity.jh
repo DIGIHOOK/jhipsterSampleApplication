@@ -1,0 +1,7 @@
+
+entity AccountJEDI {
+	accountNum Integer,
+    accountLabel String,
+    oldBalance Long,
+    balance Long
+}
