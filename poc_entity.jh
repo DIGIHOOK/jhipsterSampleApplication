@@ -1,0 +1,7 @@
+
+entity Account {
+	accountNum Integer,
+    accountLabel String,
+    oldBalance Long,
+    balance Long
+}
