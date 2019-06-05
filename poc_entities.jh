@@ -1,0 +1,35 @@
+
+entity Account {
+	accountNum Integer,
+    oldBalance Long,
+    balance Long
+}
+
+entity Customer {
+    customerNum Integer,
+    firstName String,
+	lastName String,
+	email String,
+	phoneNumber String
+}
+
+entity Agency {
+    agencyNum Integer,
+	streetAddress String,
+	postalCode String,
+	city String
+}
+
+relationship ManyToMany {
+	Account{customer(customerNum)} to Customer{account}
+}
+
+relationship OneToMany {
+	Agency{Account} to Account
+}    
+
+paginate Account, Customer, Agency with pagination
+
+dto * with mapstruct
+
+service all with serviceImpl
